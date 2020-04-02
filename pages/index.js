@@ -4,6 +4,7 @@ import { GameStatus } from '../components/gamestatus';
 import Header from '../components/header';
 import TextBox from '../components/textbox';
 import Loader from '../components/loader';
+import Clock from '../components/clock';
 
 export default class Index extends React.Component{
     
@@ -107,6 +108,8 @@ export default class Index extends React.Component{
     render() {
         return (
             <>
+            <Clock />
+            
             <div className="game-header">
                 <Header text="Memory-Game" />
             </div>
