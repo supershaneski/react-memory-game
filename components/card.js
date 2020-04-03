@@ -43,7 +43,9 @@ export default function Card(props) {
                     width: 53px;
                     height: 75px;
                     transition: .5s;
+                    /*overflow: visible !important;*/
                     transform-style: preserve-3d;
+                    -webkit-transform-style: preserve-3d;
                 }
                 .card img {
                     position: absolute;
@@ -51,7 +53,8 @@ export default function Card(props) {
                     top: 0px;
                     width: 100%;
                     height: 100%;
-                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+	                backface-visibility: hidden;
                 }
                 .front {
                     z-index: 2;
